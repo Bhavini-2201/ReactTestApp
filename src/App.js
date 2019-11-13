@@ -19,7 +19,8 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-             <button onClick={this.handleClick}>
+        <LogIn />
+        <button onClick={this.handleClick}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button>
     
@@ -29,7 +30,7 @@ export class App extends React.Component {
 }
 
 
-export class LogIn extends React.Component {
+class LogIn extends React.Component {
   constructor(props){
     super(props);
     this.state = {isLoggedIn : false}
